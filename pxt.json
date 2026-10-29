@@ -6,7 +6,9 @@
         "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0",
         "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.2.2",
         "arcade-piano-roll": "github:microsoft/arcade-piano-roll#v0.0.1",
-        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2"
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "BetterSettings": "github:sargedev/bettersettings#2023.5.1"
     },
     "files": [
         "main.blocks",
