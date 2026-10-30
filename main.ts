@@ -1,13 +1,12 @@
 function oobe () {
-    game.splash("Welcome to LegacyOS")
+    game.setDialogFrame(assets.image`Box01`)
+    game.showLongText("Welcome To LEGACYOS", DialogLayout.Bottom)
+    game.showLongText("The open-source OS that carries a LEGACY to empower users.", DialogLayout.Bottom)
     users = [game.askForString("What's your name?")]
     blockSettings.writeStringArray("usernames", users)
 }
 function userSelect () {
-    game.splash("UserSelect is a stub.", "It is not the existence yet. Please wait...")
-    if (game.ask("Do you want to reboot?")) {
-        game.reset()
-    }
+	
 }
 let users: string[] = []
 let currentUserName: string;
