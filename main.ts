@@ -6,8 +6,18 @@ function oobe () {
     blockSettings.writeStringArray("usernames", users)
 }
 function userSelect () {
-	
+    MenuUsers = [miniMenu.createMenuItem("Add User",assets.image`AddUser`)]
+    users = blockSettings.readStringArray("usernames")
+    for (let index = 0; index < users.length; index++) {
+        MenuUsers.unshift(miniMenu.createMenuItem(users[0],assets.image`User`))
+    }
+    myMenu = miniMenu.createMenuFromArray(MenuUsers)
+    miniMenu.onButtonPressed(myMenu, miniMenu.Button.A, function (selection, selectedIndex) {
+    	
+    })
 }
+let myMenu: Sprite = null
+let MenuUsers: miniMenu.MenuItem[] = []
 let users: string[] = []
 let currentUserName: string;
 let logoText = fancyText.create("LegacyOS")
