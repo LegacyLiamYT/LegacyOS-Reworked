@@ -22,11 +22,13 @@ function userSelect () {
     })
 }
 function desktop () {
-    tiles.setCurrentTilemap(tilemap`level1`)
+	
 }
 let myMenu: Sprite = null
 let MenuUsers: miniMenu.MenuItem[] = []
 let users: string[] = []
+game.splash("This is now", "abandoned")
+game.splash("Github support", "will now be dropped")
 let currentUserName: string;
 let logoText = fancyText.create("LegacyOS")
 pause(500)
