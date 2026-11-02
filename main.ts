@@ -6,15 +6,23 @@ function oobe () {
     blockSettings.writeStringArray("usernames", users)
 }
 function userSelect () {
-    MenuUsers = [miniMenu.createMenuItem("Add User",assets.image`AddUser`)]
+    MenuUsers = [miniMenu.createMenuItem("Add User")]
     users = blockSettings.readStringArray("usernames")
     for (let index = 0; index < users.length; index++) {
-        MenuUsers.unshift(miniMenu.createMenuItem(users[0],assets.image`User`))
+        MenuUsers.unshift(miniMenu.createMenuItem(users[0]))
     }
     myMenu = miniMenu.createMenuFromArray(MenuUsers)
     miniMenu.onButtonPressed(myMenu, miniMenu.Button.A, function (selection, selectedIndex) {
-    	
+        sprites.destroy(myMenu)
+        if (selection == "Add User") {
+        	
+        } else {
+            desktop()
+        }
     })
+}
+function desktop () {
+    tiles.setCurrentTilemap(tilemap`level1`)
 }
 let myMenu: Sprite = null
 let MenuUsers: miniMenu.MenuItem[] = []

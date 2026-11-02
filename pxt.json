@@ -9,7 +9,8 @@
         "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
         "BetterSettings": "github:sargedev/bettersettings#2023.5.1",
-        "sprite-fx": "github:kohanmathers/makecodespritefx#v1.3.0"
+        "sprite-fx": "github:kohanmathers/makecodespritefx#v1.3.0",
+        "sevenseg": "*"
     },
     "files": [
         "main.blocks",
